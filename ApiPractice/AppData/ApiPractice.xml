@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiPractice</name>
+    </assembly>
+    <members>
+        <member name="T:ApiPractice.SwaggerConfig">
+            <summary>
+            Swagger設定區域
+            </summary>
+        </member>
+        <member name="M:ApiPractice.SwaggerConfig.Register">
+            <summary>
+            Swagger註冊
+            </summary>
+        </member>
+        <member name="T:ApiPractice.Attributes.ManagerOnlyAttribute">
+            <summary>
+            判斷是不是管理者
+            </summary>
+        </member>
+        <member name="T:ApiPractice.Attributes.PersonalOnlyAttribute">
+            <summary>
+            判斷是不是相同使用者
+            </summary>
+        </member>
+        <member name="T:ApiPractice.Controllers.LoginController">
+            <summary>
+            使用者登入
+            </summary>
+        </member>
+        <member name="T:ApiPractice.Controllers.ArticlesController">
+            <summary>
+            文章資訊
+            </summary>
+        </member>
+        <member name="M:ApiPractice.Controllers.ArticlesController.GetArticles">
+            <summary>
+            取得所有文章
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Controllers.ArticlesController.GetArticle(System.String)">
+            <summary>
+            取得特定文章資料
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Controllers.ArticlesController.AddArticle(ApiPractice.Models.ArticleModel)">
+            <summary>
+            新增文章
+            </summary>
+            <param name="articleModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Controllers.ArticlesController.UpdateArticle(System.String,ApiPractice.UpdateModels.ArticleUpdateModel)">
+            <summary>
+            修改文章
+            </summary>
+            <param name="Id"></param>
+            <param name="UpdateInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Controllers.ArticlesController.DeleteArticle(System.String)">
+            <summary>
+            刪除文章
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Controllers.ArticlesController.GetUserArticles(System.String)">
+            <summary>
+            取得使用者的文章資訊
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiPractice.Controllers.UsersController">
+            <summary>
+            使用者資訊
+            </summary>
+        </member>
+        <member name="M:ApiPractice.Controllers.UsersController.GetUsers">
+            <summary>
+            取得所有使用者資料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Controllers.UsersController.GetUser(System.String)">
+            <summary>
+            取得其中一筆使用者資料
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Controllers.UsersController.AddUser(ApiPractice.Models.UserModel)">
+            <summary>
+            新增使用者(管理者使用)
+            </summary>
+            <param name="userModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Controllers.UsersController.UpdateUser(System.String,ApiPractice.UpdateModels.UserUpdateModel)">
+            <summary>
+            更新使用者資料(個人使用者使用)
+            </summary>
+            <param name="Id"></param>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Controllers.UsersController.DeleteUser(System.String)">
+            <summary>
+            刪除使用者
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Datas.MongoContext.QueryOne``1(MongoDB.Driver.FilterDefinition{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filter">Filter是可以帶參數查詢的</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Repositorys.UserRepository.GetUser(System.String,System.String)">
+            <summary>
+            透過帳號密碼取得使用者資訊
+            </summary>
+            <param name="UID"></param>
+            <param name="UserPwd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiPractice.Shared.JWTShared.TokenVerification(System.String)">
+            <summary>
+            驗證Token
+            </summary>
+            <param name="Token"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
